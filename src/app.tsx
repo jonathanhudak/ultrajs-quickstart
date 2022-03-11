@@ -14,7 +14,7 @@ const Ultra = ({ cache }: { cache: Cache }) => {
   return (
     <SWRConfig value={options(cache)}>
       <Helmet>
-        <title>Ultra</title>
+        <title>Hello Ultra</title>
       </Helmet>
       <main>
         <Switch>
