@@ -7,7 +7,7 @@ import { Cache } from "https://deno.land/x/ultra@v0.7.6/src/types.ts";
 
 const options = (cache: Cache) => ({
   provider: () => ultraCache(cache),
-  suspense: true,
+  // suspense: true,
 });
 
 const Ultra = ({ cache }: { cache: Cache }) => {
