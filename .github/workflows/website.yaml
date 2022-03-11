@@ -1,9 +1,6 @@
-name: deno deploy
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+name: Deno Deploy
+
+on: [push]
 
 jobs:
   deploy:
@@ -19,7 +16,7 @@ jobs:
       - name: Install Deno
         uses: denoland/setup-deno@main
         with:
-          deno-version: 1.18.2
+          deno-version: 1.19.1
 
       - name: Build site
         run: deno run -A https://deno.land/x/ultra@v0.7.5/src/deno/build.ts
@@ -27,5 +24,5 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: afraid-starling-18
+          project: "afraid-starling-18"
           entrypoint: .ultra/ULTRA.js
