@@ -21,6 +21,9 @@ const Ultra = ({ cache }: { cache: Cache }) => {
           <Route path="/">
             <h1>Homepage</h1>
           </Route>
+          <Route path="/boom">
+            <h1>Boom! 💥</h1>
+          </Route>
           <Route>
             <h1>404</h1>
           </Route>

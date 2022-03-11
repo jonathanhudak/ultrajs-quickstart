@@ -1,5 +1,7 @@
 # Readme
 
+[![Deno Deploy](https://github.com/jonathanhudak/ultrajs-quickstart/actions/workflows/website.yaml/badge.svg)](https://github.com/jonathanhudak/ultrajs-quickstart/actions/workflows/website.yaml)
+
 ## Sources
 
 ### Deno
