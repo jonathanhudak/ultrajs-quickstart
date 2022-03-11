@@ -27,5 +27,5 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: jmh-ultra
+          project: afraid-starling-18
           entrypoint: .ultra/ULTRA.js
