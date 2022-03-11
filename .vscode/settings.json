@@ -1,0 +1,10 @@
+{
+  "deno.enable": true,
+  "deno.lint": true,
+  "prettier.enable": false,
+  "deno.suggest.imports.hosts": {
+    "https://deno.land": false
+  },
+  "deno.importMap": "./importmap.json",
+  "deno.unstable": true
+}
