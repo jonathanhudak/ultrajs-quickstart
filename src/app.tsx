@@ -5,17 +5,17 @@ import { Helmet } from "react-helmet";
 import ultraCache from "ultra/cache";
 import { Cache } from "https://deno.land/x/ultra@v0.7.6/src/types.ts";
 
-const options = (cache: Cache) => ({
-  provider: () => ultraCache(cache),
-  suspense: true,
-  onError(err: Error) {
-    throw err;
-  },
-});
+// const options = (cache: Cache) => ({
+//   provider: () => ultraCache(cache),
+//   suspense: true,
+//   onError(err: Error) {
+//     throw err;
+//   },
+// });
 
 const Ultra = ({ cache }: { cache: Cache }) => {
   return (
-    <SWRConfig value={options(cache)}>
+    <SWRConfig value={{ provider: () => new Map() }}>
       <Helmet>
         <title>Hello Ultra</title>
       </Helmet>
